@@ -1,12 +1,12 @@
 ﻿using System.Numerics;
+using Dmo.Mapping;
+using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using Dmo.Static;
 
 namespace Dmo
 {
-    // 1. Class
-    // 2. Struct
-    // 3. Enum
-    // 4. Interface
     internal class Program
     {
         static void Main()
@@ -130,8 +130,8 @@ namespace Dmo
 
             #region Operator Overloading - (++ Operator)
 
-            Complex C01 = new Complex() { Real = 3, Imag = 4 };
-            Complex C02 = new Complex() { Real = 4, Imag = 2 };
+            //Complex C01 = new Complex() { Real = 3, Imag = 4 };
+            //Complex C02 = new Complex() { Real = 4, Imag = 2 };
 
             // ++ -- 
             // Unray Operator
@@ -158,9 +158,19 @@ namespace Dmo
             #region  Operator Overloading - (Comparision  Operator)
 
 
+            //Complex C01 = new Complex() { Real = 3, Imag = 4 };
+            //Complex C02 = new Complex() { Real = 4, Imag = 2 };
 
+            //if (C01 >= C02)
+            //{
+            //    Console.WriteLine(value: "C01 is greater than C02");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(value: "C01 is NOT greater than C02");
+            //}
 
-
+            //bool X = true || true;
 
 
             #endregion
@@ -169,25 +179,88 @@ namespace Dmo
 
 
 
+            //int Y = (int) X;
+            //// (int): Casting Operator
 
+            //Complex C01 = new Complex() { Real = 3, Imag 4 };
 
+            //string = (string) C81;
+            //// (string): Convert Complex Number To String
+            ///
+            //// Operator Overloading
+            //// User-Defined Casting Operator
+
+            //Console.WriteLine(S);
+
+            //int X = (int) C01;
+
+            //Console.WriteLine(X);
+
+            //int X = (int)new Complex() { Real = 4, Imag = 7 };
+
+            // Mapping: Convert From Datatype To Datatype
+
+            // Code First
+            //// DB First
+
+            // User [Id, Name, Email, Password, UserName, Phone Number, CardNumber, ExipreDate]
+
+            // UserViewModel
+            // UserDto
+            // [Name, Email, PhoneNumber] 
+
+            //User user = new User();
+            //// From DB
+            //// Mannual Mapping
+            //UserDto userDto = new UserDto()
+            //{
+            //Email = user.Email,
+            //Name = user.Name,
+            //PhoneNumber = user.PhoneNumber
+            //};
+
+            // Casting Operator
+            // Automapper Mapping Automatic
 
 
             #endregion
 
             #region Static [Class, Method, Consteuctor, Property, Attributes]
 
+            // static: C# Keyword [class method property constructor attributes]
+            // static class
+            // static mehtod
+            // static property
+            // static constructor
+            //static attribute
 
+            //Utilities U01 = new Utilities();
+            //Utilities U02 = new Utilities();
+            //Utilities U03 = new Utilities();
 
+            //Console.WriteLine(U01.CmToInch(254)); // 100
+            //Console.WriteLine(U02.CmToInch(254)); // 100
+            //Console.WriteLine(U03.CmToInch(254)); // 100
 
+            //Console.WriteLine(Utilities.CmToInch(254)); // 100
+            //Console.WriteLine(Utilities.CmToInch(254)); // 100
+            //Console.WriteLine(Utilities.CmToInch(254)); // 100 
 
+            //Console.WriteLine(U01.PI);
+            //Console.WriteLine(U02.PI);
+            //Console.WriteLine(U03.PI);
 
+            //Console.WriteLine(Utilities.PI);
+            //Console.WriteLine(Utilities.PI);
+            //Console.WriteLine(Utilities.PI);
+
+            //Utilities UI = new Utilities();
 
             #endregion
 
             #region Sealed (Class, Method, Property)
 
-
+            // Sealed : C# Keyword [class - Method - Property]
 
 
 
@@ -197,7 +270,10 @@ namespace Dmo
 
             #region Partial Classes
 
+            // Partial
 
+            // Employee employee = new Employee()
+            // employee
 
 
 

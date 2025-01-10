@@ -60,6 +60,59 @@ namespace Dmo.Operator_Overloading
             return new Complex();
         }
 
+        // Comparsion Operation Binary : > < >= <= != ==
+        // Must Be Boolean
+
+        public  static bool operator <(Complex left, Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Imag < right.Imag;
+        }
+
+        public static bool operator >(Complex left, Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Imag > right.Imag;
+        }
+
+        public static bool operator <=(Complex left, Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Imag <= right.Imag;
+        }
+
+        public static bool operator >=(Complex left,Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Imag >= right.Imag;
+        }
+
+        public static bool operator ==(Complex left, Complex right)
+        {
+            return left.Real == right.Real && left.Imag == right.Imag;
+        }
+
+        public static bool operator !=(Complex left, Complex right)
+        {
+            return left.Real != right.Real || left.Imag != right.Imag;
+        }
+
+        // User-Defined Casting Operator
+        // Complex --> String
+        // Function: public - Static 
+        // Implicit - Explicit
+
+        public static explicit operator string(Complex complex)
+        {
+            return complex.ToString();
+        }
+
+        public static implicit operator int(Complex complex)
+        {
+            return 223112;
+        }
+
+
         public override string ToString() 
         {
         return $"{Real} + {Imag} i";
